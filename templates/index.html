@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}{% endblock %}</title>
+    <title>Boggle</title>
   </head>
   <body>
     <section id="boggle">
@@ -19,7 +19,10 @@
         </tbody>
       </table>
 
-      <p>Score: <b class="score">0</b> Seconds: <b class="timer"></b></p>
+      <p>
+        Score: <b class="score">0</b> 
+        Seconds: <b class="timer"></b>
+      </p>
 
       <form method="POST" class="add-guess">
         <input name="guess" class="guess" />
@@ -27,7 +30,8 @@
       </form>
     </section>
     <p class="response"></p>
-    <ul class="guesses"></ul>
+    <p class="high-score"></p>
+    <ul class="guesses">Found words:</ul>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
